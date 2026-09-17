@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Polityka prywatności — Zeszyt wizyt | Simplo Studio</title>
-<meta name="description" content="Polityka prywatności aplikacji Zeszyt wizyt: jakie dane przetwarzamy, gdzie są przechowywane i jakie masz prawa.">
+<title>Polityka prywatności — Simplo Studio</title>
+<meta name="description" content="Polityka prywatności Simplo Studio: jakie dane przetwarzamy w naszych aplikacjach, gdzie są przechowywane i jakie masz prawa. Zawiera sekcję dla aplikacji Zeszyt wizyt.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
@@ -23,6 +23,7 @@
   h1 { font-size: 28px; font-weight: 500; margin: 0 0 8px; }
   .meta { color: var(--on-surface-variant); font-size: 15px; }
   h2 { font-size: 21px; font-weight: 500; margin: 40px 0 10px; }
+  h3 { font-size: 18px; font-weight: 500; margin: 28px 0 8px; }
   p, li { margin: 0 0 12px; }
   ul { padding-left: 22px; }
   table { border-collapse: collapse; width: 100%; margin: 12px 0 20px; font-size: 16px; }
@@ -36,21 +37,34 @@
 <body>
 <div class="wrap">
   <header>
-    <h1>Polityka prywatności — Zeszyt wizyt</h1>
-    <p class="meta">Wersja z 18 września 2026 · dotyczy aplikacji mobilnej „Zeszyt wizyt” (Android) i tej witryny</p>
+    <h1>Polityka prywatności</h1>
+    <p class="meta">Simplo Studio · wersja z 18 września 2026</p>
+    <p style="margin-top:16px">Ta polityka obejmuje <strong>wszystkie produkty Simplo Studio</strong> oraz tę witrynę. Część ogólna opisuje zasady wspólne, a na końcu znajdziesz sekcje dla poszczególnych aplikacji. Obecnie jest to <a href="#zeszyt-wizyt">Zeszyt wizyt</a>.</p>
   </header>
 
   <h2>Kto przetwarza dane</h2>
   <p>Administratorem danych jest <strong>Michał Wittig</strong>, prowadzący działalność pod marką Simplo Studio. Kontakt: <a href="mailto:michal.wittig77@gmail.com">michal.wittig77@gmail.com</a>. Pełne dane rejestrowe udostępniamy na żądanie.</p>
 
-  <h2>Dwie role: my i salon</h2>
-  <p>Aplikacja służy salonom i gabinetom do prowadzenia kalendarza wizyt. W praktyce oznacza to dwa poziomy:</p>
+  <h2>Zasady wspólne dla wszystkich naszych aplikacji</h2>
+  <ul>
+    <li><strong>Nie sprzedajemy danych</strong> i nie udostępniamy ich do celów reklamowych.</li>
+    <li><strong>Nie wyświetlamy reklam</strong> w naszych aplikacjach.</li>
+    <li>Zbieramy tylko dane potrzebne do działania aplikacji — nigdy „na zapas”.</li>
+    <li>Dane trzymamy w Unii Europejskiej, u sprawdzonych dostawców infrastruktury.</li>
+    <li>Każda aplikacja ma niżej własną sekcję: co dokładnie zbiera, po co i na jakiej podstawie.</li>
+  </ul>
+
+  <h2 id="zeszyt-wizyt">Zeszyt wizyt (aplikacja na Androida)</h2>
+  <p>Aplikacja dla salonów fryzjerskich, kosmetycznych i jednoosobowych gabinetów: prowadzi kalendarz wizyt i wysyła klientom przypomnienia SMS. Poniższe zasady dotyczą wyłącznie tej aplikacji.</p>
+
+  <h3>Dwie role: my i salon</h3>
+  <p>W praktyce dane w aplikacji mają dwa poziomy:</p>
   <ul>
     <li><strong>Dane właściciela salonu</strong> (osoby, która zakłada konto) przetwarzamy jako administrator — żeby aplikacja działała i żeby móc się z nią kontaktować.</li>
     <li><strong>Dane klientów salonu</strong> (imię, telefon, terminy wizyt) należą do salonu. Salon decyduje, co tam wpisuje, a my przetwarzamy je wyłącznie w jego imieniu, jako podmiot przetwarzający. Zasady tego powierzenia opisuje umowa zawierana z salonem.</li>
   </ul>
 
-  <h2>Jakie dane przetwarzamy</h2>
+  <h3>Jakie dane przetwarzamy</h3>
   <table>
     <tr><th>Dane</th><th>Po co</th><th>Podstawa</th></tr>
     <tr><td>Adres e-mail i nazwa konta Google właściciela salonu</td><td>Logowanie do aplikacji i przypisanie kalendarza do właściwego salonu</td><td>Wykonanie umowy (art. 6 ust. 1 lit. b RODO)</td></tr>
@@ -60,28 +74,28 @@
   </table>
   <p>Aplikacja <strong>nie zbiera</strong> lokalizacji, kontaktów z telefonu, zdjęć ani danych o zdrowiu. Pole opisu wizyty jest zwykłą notatką i nie służy do prowadzenia dokumentacji medycznej.</p>
 
-  <h2>Gdzie dane są przechowywane</h2>
+  <h3>Gdzie dane są przechowywane</h3>
   <p>Dane trzymamy w usłudze <strong>Google Cloud Firestore</strong>, w regionie <strong>europe-central2 (Warszawa)</strong>. Logowanie obsługuje Firebase Authentication. Dostawcą obu usług jest Google, który działa jako nasz podprzetwarzający. Dane są szyfrowane w przesyle i w spoczynku.</p>
   <p>Kopia danych kalendarza znajduje się także w pamięci urządzenia, na którym zainstalowano aplikację — dzięki temu działa ona bez internetu. Wylogowanie usuwa tę kopię.</p>
 
-  <h2>Przypomnienia SMS</h2>
+  <h3>Przypomnienia SMS</h3>
   <p>Gdy salon włączy przypomnienia, numer telefonu klienta i treść wiadomości trafiają do operatora bramki SMS, który wysyła wiadomość. Treść przypomnienia nie zawiera imienia klienta. Funkcja jest w przygotowaniu i uruchamiamy ją dopiero po podpisaniu umowy z salonem.</p>
 
-  <h2>Jak długo</h2>
+  <h3>Jak długo przechowujemy dane</h3>
   <p>Dane kalendarza przechowujemy tak długo, jak salon korzysta z aplikacji. Po zakończeniu współpracy usuwamy je w ciągu 30 dni, z wyjątkiem kopii zapasowych, które wygasają zgodnie z ich retencją (do 12 miesięcy). Salon może w każdej chwili usunąć pojedynczego klienta wraz z jego danymi.</p>
 
-  <h2>Twoje prawa</h2>
+  <h2>Twoje prawa (dotyczy wszystkich produktów)</h2>
   <p>Masz prawo dostępu do swoich danych, ich sprostowania, usunięcia, ograniczenia przetwarzania, przenoszenia oraz wniesienia sprzeciwu. Przysługuje Ci też skarga do Prezesa Urzędu Ochrony Danych Osobowych.</p>
   <p><strong>Jesteś klientem salonu?</strong> W sprawie swoich danych zwróć się najpierw do salonu, w którym umówiono wizytę — to on decyduje o tych danych. Możesz też napisać do nas, a my przekażemy sprawę dalej.</p>
 
-  <h2>Statystyki i reklamy</h2>
-  <p>Nie wyświetlamy reklam i nie sprzedajemy danych. Nie używamy narzędzi śledzących w tej witrynie. W aplikacji planujemy anonimową statystykę korzystania (bez imion, numerów telefonu i treści notatek), żeby wiedzieć, które funkcje są używane. Gdy ją uruchomimy, zaktualizujemy tę politykę.</p>
+  <h2>Statystyki</h2>
+  <p>Nie używamy narzędzi śledzących w tej witrynie. W aplikacji Zeszyt wizyt planujemy anonimową statystykę korzystania (bez imion, numerów telefonu i treści notatek), żeby wiedzieć, które funkcje są używane. Gdy ją uruchomimy, zaktualizujemy tę politykę.</p>
 
   <h2>Zmiany</h2>
   <p>Nową wersję polityki publikujemy pod tym adresem wraz z datą. O istotnych zmianach informujemy salony korzystające z aplikacji.</p>
 
   <div class="note">
-    <p style="margin:0"><strong>Aplikacja jest w fazie pilotażu.</strong> Ta polityka opisuje stan na wrzesień 2026 i będzie uzupełniana wraz z uruchamianiem kolejnych funkcji.</p>
+    <p style="margin:0"><strong>Zeszyt wizyt jest w fazie pilotażu.</strong> Ta polityka opisuje stan na wrzesień 2026 i będzie uzupełniana wraz z uruchamianiem kolejnych funkcji oraz kolejnych produktów.</p>
   </div>
 
   <footer><a href="/">Simplo Studio</a> · © 2026</footer>
