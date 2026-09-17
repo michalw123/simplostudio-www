@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Simplo Studio — proste narzędzia dla małych firm</title>
+<meta name="description" content="Simplo Studio tworzy proste aplikacje dla jednoosobowych firm usługowych. Pierwszy produkt: Zeszyt wizyt — cyfrowy kalendarz wizyt dla salonów i gabinetów.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+<style>
+  :root {
+    color-scheme: light;
+    --background: #FAF7F2; --surface: #FFFFFF; --surface-container: #F1ECE4;
+    --on-surface: #1D2A2E; --on-surface-variant: #4A5256; --outline-variant: #D8D0C4;
+    --primary: #1E5F5B; --on-primary: #FFFFFF; --primary-container: #CDE8E4;
+    --font: "Roboto", system-ui, "Segoe UI", Arial, sans-serif;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--background); color: var(--on-surface); font: 400 17px/1.6 var(--font); padding-inline: 20px; padding-block: 0 64px; }
+  .wrap { max-width: 760px; margin: 0 auto; }
+  header { padding-block: 56px 40px; border-bottom: 1px solid var(--outline-variant); }
+  .brand { display: flex; align-items: center; gap: 14px; }
+  .mark { width: 52px; height: 52px; border-radius: 14px; background: var(--primary); display: grid; place-items: center; flex: none; }
+  .mark svg { width: 30px; height: 30px; fill: var(--on-primary); }
+  h1 { font-size: 30px; font-weight: 500; margin: 0; letter-spacing: -0.01em; }
+  header p { margin: 20px 0 0; font-size: 19px; color: var(--on-surface-variant); max-width: 56ch; }
+  h2 { font-size: 22px; font-weight: 500; margin: 48px 0 12px; }
+  p { margin: 0 0 16px; }
+  ul { margin: 0 0 16px; padding-left: 22px; }
+  li { margin-bottom: 8px; }
+  .card { background: var(--surface); border: 1px solid var(--outline-variant); border-radius: 14px; padding: 24px; margin-top: 16px; }
+  .card h3 { margin: 0 0 8px; font-size: 20px; font-weight: 500; }
+  .badge { display: inline-block; background: var(--primary-container); color: #0B3431; font-size: 14px; font-weight: 500; padding: 4px 12px; border-radius: 999px; margin-bottom: 12px; }
+  a { color: var(--primary); }
+  footer { margin-top: 56px; padding-top: 24px; border-top: 1px solid var(--outline-variant); color: var(--on-surface-variant); font-size: 15px; }
+  footer a { margin-right: 18px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="brand">
+      <span class="mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24"><path d="M21 5c-1.9-.6-3.9-.9-6-.9-2.1 0-4.1.3-6 .9v14.1c1.9-.6 3.9-.9 6-.9 2.1 0 4.1.3 6 .9V5zM3 5.5v13.6c0 .4.4.7.8.6 1.7-.5 3.4-.7 5.2-.7V4.8c-1.9 0-3.8.3-5.6.9-.3.1-.4.3-.4.6z"/></svg>
+      </span>
+      <h1>Simplo Studio</h1>
+    </div>
+    <p>Robimy proste aplikacje dla jednoosobowych firm usługowych — takie, które da się obsłużyć jedną ręką, z nożyczkami w drugiej.</p>
+  </header>
+
+  <h2>Produkty</h2>
+  <div class="card">
+    <span class="badge">W budowie · pilotaż 2026</span>
+    <h3>Zeszyt wizyt</h3>
+    <p>Cyfrowy zeszyt wizyt dla fryzjerów, kosmetyczek i jednoosobowych gabinetów. Zastępuje papierowy kalendarz: pokazuje dzień na jednym ekranie, sam szuka wolnych terminów i sam wysyła przypomnienia SMS.</p>
+    <ul>
+      <li>Kalendarz dnia i tygodnia na tablecie oraz telefonie</li>
+      <li>Zapisywanie wizyty w kilku dotknięciach, także bez internetu</li>
+      <li>Automatyczne przypomnienia SMS dla klientów</li>
+      <li>Bez marketplace’u — Twoi klienci zostają Twoimi klientami</li>
+    </ul>
+    <p>Aplikacja jest w fazie pilotażu u pierwszych użytkowników. Jeśli prowadzisz salon albo gabinet i chcesz ją wypróbować, napisz.</p>
+  </div>
+
+  <h2>Kontakt</h2>
+  <p>Simplo Studio — Michał Wittig<br>
+  E-mail: <a href="mailto:michal.wittig77@gmail.com">michal.wittig77@gmail.com</a></p>
+
+  <footer>
+    <a href="/polityka-prywatnosci.html">Polityka prywatności</a>
+    <span>© 2026 Simplo Studio</span>
+  </footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Polityka prywatności — Zeszyt wizyt | Simplo Studio</title>
+<meta name="description" content="Polityka prywatności aplikacji Zeszyt wizyt: jakie dane przetwarzamy, gdzie są przechowywane i jakie masz prawa.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+<style>
+  :root {
+    color-scheme: light;
+    --background: #FAF7F2; --surface: #FFFFFF; --surface-container: #F1ECE4;
+    --on-surface: #1D2A2E; --on-surface-variant: #4A5256; --outline-variant: #D8D0C4;
+    --primary: #1E5F5B;
+    --font: "Roboto", system-ui, "Segoe UI", Arial, sans-serif;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--background); color: var(--on-surface); font: 400 17px/1.65 var(--font); padding-inline: 20px; padding-block: 0 64px; }
+  .wrap { max-width: 760px; margin: 0 auto; }
+  header { padding-block: 48px 24px; border-bottom: 1px solid var(--outline-variant); }
+  h1 { font-size: 28px; font-weight: 500; margin: 0 0 8px; }
+  .meta { color: var(--on-surface-variant); font-size: 15px; }
+  h2 { font-size: 21px; font-weight: 500; margin: 40px 0 10px; }
+  p, li { margin: 0 0 12px; }
+  ul { padding-left: 22px; }
+  table { border-collapse: collapse; width: 100%; margin: 12px 0 20px; font-size: 16px; }
+  th, td { border: 1px solid var(--outline-variant); padding: 10px 12px; text-align: left; vertical-align: top; }
+  th { background: var(--surface-container); font-weight: 500; }
+  .note { background: var(--surface); border: 1px solid var(--outline-variant); border-radius: 12px; padding: 16px 20px; }
+  a { color: var(--primary); }
+  footer { margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--outline-variant); color: var(--on-surface-variant); font-size: 15px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Polityka prywatności — Zeszyt wizyt</h1>
+    <p class="meta">Wersja z 18 września 2026 · dotyczy aplikacji mobilnej „Zeszyt wizyt” (Android) i tej witryny</p>
+  </header>
+
+  <h2>Kto przetwarza dane</h2>
+  <p>Administratorem danych jest <strong>Michał Wittig</strong>, prowadzący działalność pod marką Simplo Studio. Kontakt: <a href="mailto:michal.wittig77@gmail.com">michal.wittig77@gmail.com</a>. Pełne dane rejestrowe udostępniamy na żądanie.</p>
+
+  <h2>Dwie role: my i salon</h2>
+  <p>Aplikacja służy salonom i gabinetom do prowadzenia kalendarza wizyt. W praktyce oznacza to dwa poziomy:</p>
+  <ul>
+    <li><strong>Dane właściciela salonu</strong> (osoby, która zakłada konto) przetwarzamy jako administrator — żeby aplikacja działała i żeby móc się z nią kontaktować.</li>
+    <li><strong>Dane klientów salonu</strong> (imię, telefon, terminy wizyt) należą do salonu. Salon decyduje, co tam wpisuje, a my przetwarzamy je wyłącznie w jego imieniu, jako podmiot przetwarzający. Zasady tego powierzenia opisuje umowa zawierana z salonem.</li>
+  </ul>
+
+  <h2>Jakie dane przetwarzamy</h2>
+  <table>
+    <tr><th>Dane</th><th>Po co</th><th>Podstawa</th></tr>
+    <tr><td>Adres e-mail i nazwa konta Google właściciela salonu</td><td>Logowanie do aplikacji i przypisanie kalendarza do właściwego salonu</td><td>Wykonanie umowy (art. 6 ust. 1 lit. b RODO)</td></tr>
+    <tr><td>Dane salonu: nazwa, branża, godziny pracy, ustawienia</td><td>Działanie kalendarza</td><td>Wykonanie umowy</td></tr>
+    <tr><td>Dane klientów salonu: nazwa (imię lub opis) i numer telefonu</td><td>Prowadzenie kalendarza wizyt i wysyłka przypomnień SMS</td><td>Powierzenie przez salon (art. 28 RODO)</td></tr>
+    <tr><td>Wizyty: data, godzina, czas trwania, opis, status</td><td>Kalendarz i przypomnienia</td><td>Powierzenie przez salon</td></tr>
+  </table>
+  <p>Aplikacja <strong>nie zbiera</strong> lokalizacji, kontaktów z telefonu, zdjęć ani danych o zdrowiu. Pole opisu wizyty jest zwykłą notatką i nie służy do prowadzenia dokumentacji medycznej.</p>
+
+  <h2>Gdzie dane są przechowywane</h2>
+  <p>Dane trzymamy w usłudze <strong>Google Cloud Firestore</strong>, w regionie <strong>europe-central2 (Warszawa)</strong>. Logowanie obsługuje Firebase Authentication. Dostawcą obu usług jest Google, który działa jako nasz podprzetwarzający. Dane są szyfrowane w przesyle i w spoczynku.</p>
+  <p>Kopia danych kalendarza znajduje się także w pamięci urządzenia, na którym zainstalowano aplikację — dzięki temu działa ona bez internetu. Wylogowanie usuwa tę kopię.</p>
+
+  <h2>Przypomnienia SMS</h2>
+  <p>Gdy salon włączy przypomnienia, numer telefonu klienta i treść wiadomości trafiają do operatora bramki SMS, który wysyła wiadomość. Treść przypomnienia nie zawiera imienia klienta. Funkcja jest w przygotowaniu i uruchamiamy ją dopiero po podpisaniu umowy z salonem.</p>
+
+  <h2>Jak długo</h2>
+  <p>Dane kalendarza przechowujemy tak długo, jak salon korzysta z aplikacji. Po zakończeniu współpracy usuwamy je w ciągu 30 dni, z wyjątkiem kopii zapasowych, które wygasają zgodnie z ich retencją (do 12 miesięcy). Salon może w każdej chwili usunąć pojedynczego klienta wraz z jego danymi.</p>
+
+  <h2>Twoje prawa</h2>
+  <p>Masz prawo dostępu do swoich danych, ich sprostowania, usunięcia, ograniczenia przetwarzania, przenoszenia oraz wniesienia sprzeciwu. Przysługuje Ci też skarga do Prezesa Urzędu Ochrony Danych Osobowych.</p>
+  <p><strong>Jesteś klientem salonu?</strong> W sprawie swoich danych zwróć się najpierw do salonu, w którym umówiono wizytę — to on decyduje o tych danych. Możesz też napisać do nas, a my przekażemy sprawę dalej.</p>
+
+  <h2>Statystyki i reklamy</h2>
+  <p>Nie wyświetlamy reklam i nie sprzedajemy danych. Nie używamy narzędzi śledzących w tej witrynie. W aplikacji planujemy anonimową statystykę korzystania (bez imion, numerów telefonu i treści notatek), żeby wiedzieć, które funkcje są używane. Gdy ją uruchomimy, zaktualizujemy tę politykę.</p>
+
+  <h2>Zmiany</h2>
+  <p>Nową wersję polityki publikujemy pod tym adresem wraz z datą. O istotnych zmianach informujemy salony korzystające z aplikacji.</p>
+
+  <div class="note">
+    <p style="margin:0"><strong>Aplikacja jest w fazie pilotażu.</strong> Ta polityka opisuje stan na wrzesień 2026 i będzie uzupełniana wraz z uruchamianiem kolejnych funkcji.</p>
+  </div>
+
+  <footer><a href="/">Simplo Studio</a> · © 2026</footer>
+</div>
+</body>
+</html>
