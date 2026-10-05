@@ -4,79 +4,112 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Polityka prywatności — Simplo Studio</title>
-<meta name="description" content="Polityka prywatności Simplo Studio: jakie dane przetwarzamy w naszych aplikacjach, gdzie są przechowywane i jakie masz prawa. Zawiera sekcję dla aplikacji Zeszyt wizyt.">
+<meta name="robots" content="index,follow">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230E5B55'/%3E%3Cpath d='M8 16.5l5 5L24 10' fill='none' stroke='%23fff' stroke-width='3.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Figtree:wght@400;600;700&display=swap">
 <style>
-  :root {
-    color-scheme: light;
-    --background: #FAF7F2; --surface: #FFFFFF; --surface-container: #F1ECE4;
-    --on-surface: #1D2A2E; --on-surface-variant: #4A5256; --outline-variant: #D8D0C4;
-    --primary: #1E5F5B;
-    --font: "Roboto", system-ui, "Segoe UI", Arial, sans-serif;
-  }
-  * { box-sizing: border-box; }
-  body { margin: 0; background: var(--background); color: var(--on-surface); font: 400 17px/1.65 var(--font); padding-inline: 20px; padding-block: 0 64px; }
-  .wrap { max-width: 760px; margin: 0 auto; }
-  header { padding-block: 48px 24px; border-bottom: 1px solid var(--outline-variant); }
-  h1 { font-size: 28px; font-weight: 500; margin: 0 0 8px; }
-  .meta { color: var(--on-surface-variant); font-size: 15px; }
-  h2 { font-size: 21px; font-weight: 500; margin: 40px 0 10px; }
-  h3 { font-size: 18px; font-weight: 500; margin: 28px 0 8px; }
-  p, li { margin: 0 0 12px; }
-  ul { padding-left: 22px; }
-  table { border-collapse: collapse; width: 100%; margin: 12px 0 20px; font-size: 16px; }
-  th, td { border: 1px solid var(--outline-variant); padding: 10px 12px; text-align: left; vertical-align: top; }
-  th { background: var(--surface-container); font-weight: 500; }
-  .note { background: var(--surface); border: 1px solid var(--outline-variant); border-radius: 12px; padding: 16px 20px; }
-  a { color: var(--primary); }
-  footer { margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--outline-variant); color: var(--on-surface-variant); font-size: 15px; }
+:root{--bg:#F6F8F7;--surface:#FFFFFF;--ink:#14211F;--muted:#566663;--line:#D5E0DD;--accent:#0E5B55;--accent-soft:#CFE6E1;--mark:#F3C14B;
+  --display:"Bricolage Grotesque","Segoe UI",system-ui,sans-serif;--body:"Figtree","Segoe UI",system-ui,-apple-system,sans-serif;color-scheme:light}
+@media (prefers-color-scheme: dark){:root{color-scheme:dark;--bg:#0F1716;--surface:#16211F;--ink:#E8F0EE;--muted:#9DB0AC;--line:#2A3A37;--accent:#5CC3B3;--accent-soft:#1E3A36;--mark:#E9B83F}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased}
+a{color:var(--accent)}
+:focus-visible{outline:3px solid var(--mark);outline-offset:3px;border-radius:6px}
+.top{border-bottom:1px solid var(--line)}
+.wrap{max-width:780px;margin:0 auto;padding-inline:20px}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:64px;max-width:1120px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);font-family:var(--display);font-weight:800;font-size:1.3rem;letter-spacing:-.03em}
+.brand-mark{width:30px;height:30px;border-radius:9px;background:var(--accent);display:grid;place-items:center}
+.brand span{font-weight:500;color:var(--muted)}
+main{padding-block:56px 80px}
+h1,h2,h3{font-family:var(--display);letter-spacing:-.02em;line-height:1.15;text-wrap:balance}
+h1{font-size:clamp(2rem,5vw,2.8rem);margin:0 0 8px}
+h2{font-size:1.5rem;margin:48px 0 12px;padding-top:24px;border-top:1px solid var(--line)}
+h3{font-size:1.15rem;margin:28px 0 8px}
+.meta{color:var(--muted);margin:0 0 24px}
+p,li{max-width:40em}
+ul{padding-left:22px}
+li{margin:6px 0}
+.table{overflow-x:auto;margin:16px 0;border:1px solid var(--line);border-radius:12px;background:var(--surface)}
+table{border-collapse:collapse;width:100%;min-width:560px;font-size:.95rem}
+th,td{text-align:left;vertical-align:top;padding:12px 14px;border-bottom:1px solid var(--line)}
+th{font-size:.8rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
+tr:last-child td{border-bottom:0}
+.note{background:var(--accent-soft);border-radius:12px;padding:14px 18px}
+footer{border-top:1px solid var(--line);padding-block:28px 40px;color:var(--muted);font-size:.92rem}
 </style>
 </head>
 <body>
-<div class="wrap">
-  <header>
-    <h1>Polityka prywatności</h1>
-    <p class="meta">Simplo Studio · wersja z 18 września 2026</p>
-    <p style="margin-top:16px">Ta polityka obejmuje <strong>wszystkie produkty Simplo Studio</strong> oraz tę witrynę. Część ogólna opisuje zasady wspólne, a na końcu znajdziesz sekcje dla poszczególnych aplikacji. Obecnie jest to <a href="#zeszyt-wizyt">Zeszyt wizyt</a>.</p>
-  </header>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="./"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>Simplo<span>Studio</span></a>
+    <a href="./">← Strona główna</a>
+  </div>
+</header>
+
+<main class="wrap">
+  <h1>Polityka prywatności</h1>
+  <p class="meta">Simplo Studio · wersja z 27 września 2026</p>
+
+  <p>Ta polityka obejmuje tę witrynę, usługi Simplo Studio oraz nasze aplikacje. Część ogólna opisuje zasady wspólne. Dalej znajdziesz sekcję o kontakcie przez stronę, a na końcu sekcje dla poszczególnych aplikacji. Obecnie jest to Termino.</p>
 
   <h2>Kto przetwarza dane</h2>
-  <p>Administratorem danych jest <strong>Michał Wittig</strong>, prowadzący działalność pod marką Simplo Studio. Kontakt: <a href="mailto:michal.wittig77@gmail.com">michal.wittig77@gmail.com</a>. Pełne dane rejestrowe udostępniamy na żądanie.</p>
+  <p>Administratorem danych jest Michał Wittig, prowadzący działalność pod marką Simplo Studio. Kontakt: <span class="js-mail">kontakt [at] simplostudio.com</span>. Pełne dane rejestrowe udostępniamy na żądanie.</p>
 
-  <h2>Zasady wspólne dla wszystkich naszych aplikacji</h2>
+  <h2>Zasady wspólne</h2>
   <ul>
-    <li><strong>Nie sprzedajemy danych</strong> i nie udostępniamy ich do celów reklamowych.</li>
-    <li><strong>Nie wyświetlamy reklam</strong> w naszych aplikacjach.</li>
-    <li>Zbieramy tylko dane potrzebne do działania aplikacji — nigdy „na zapas”.</li>
+    <li>Nie sprzedajemy danych i nie udostępniamy ich do celów reklamowych.</li>
+    <li>Nie wyświetlamy reklam w naszych aplikacjach.</li>
+    <li>Zbieramy tylko dane potrzebne do działania usługi, nigdy „na zapas”.</li>
     <li>Dane trzymamy w Unii Europejskiej, u sprawdzonych dostawców infrastruktury.</li>
-    <li>Każda aplikacja ma niżej własną sekcję: co dokładnie zbiera, po co i na jakiej podstawie.</li>
+    <li>Każda usługa i aplikacja ma niżej własną sekcję: co dokładnie zbiera, po co i na jakiej podstawie.</li>
   </ul>
 
-  <h2 id="zeszyt-wizyt">Zeszyt wizyt (aplikacja na Androida)</h2>
+  <h2>Kontakt przez stronę i telefon</h2>
+  <p>Gdy piszesz do nas przez formularz, e-mail lub WhatsApp albo dzwonisz, przetwarzamy dane, które sam podajesz: imię, numer telefonu lub adres e-mail oraz treść wiadomości.</p>
+  <div class="table">
+    <table>
+      <thead><tr><th>Dane</th><th>Po co</th><th>Podstawa</th></tr></thead>
+      <tbody>
+        <tr><td>Imię, telefon lub e-mail, treść wiadomości</td><td>Odpowiedź na zapytanie, umówienie spotkania, przygotowanie oferty</td><td>Działania przed zawarciem umowy na Twoje żądanie (art. 6 ust. 1 lit. b RODO) oraz nasz uzasadniony interes w odpowiadaniu na wiadomości (art. 6 ust. 1 lit. f RODO)</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p>Wiadomość z formularza trafia na naszą skrzynkę e-mail za pośrednictwem usługi Web3Forms, która działa jako nasz podmiot przetwarzający i nie wykorzystuje tych danych do własnych celów.</p>
+  <p>Dane z zapytań przechowujemy do zakończenia rozmów. Jeśli nie dojdzie do współpracy, usuwamy je najpóźniej po 12 miesiącach. Jeśli podejmiemy współpracę, przechowujemy je przez czas jej trwania i okres wymagany przepisami, np. podatkowymi.</p>
+
+  <h2>Usługi wdrożeniowe i automatyzacje</h2>
+  <p>Gdy przygotowujemy dla Twojej firmy automatyzację, system lub stronę i mamy przy tym dostęp do danych Twoich klientów, przetwarzamy je wyłącznie w Twoim imieniu i na Twoje polecenie. Zasady opisuje umowa powierzenia przetwarzania danych (art. 28 RODO), którą zawieramy przed rozpoczęciem prac. Wspólnie ustalamy też, gdzie dane są przechowywane.</p>
+
+  <h2>Termino – cyfrowy zeszyt wizyt (aplikacja na Androida)</h2>
   <p>Aplikacja dla salonów fryzjerskich, kosmetycznych i jednoosobowych gabinetów: prowadzi kalendarz wizyt i wysyła klientom przypomnienia SMS. Poniższe zasady dotyczą wyłącznie tej aplikacji.</p>
 
   <h3>Dwie role: my i salon</h3>
   <p>W praktyce dane w aplikacji mają dwa poziomy:</p>
   <ul>
-    <li><strong>Dane właściciela salonu</strong> (osoby, która zakłada konto) przetwarzamy jako administrator — żeby aplikacja działała i żeby móc się z nią kontaktować.</li>
-    <li><strong>Dane klientów salonu</strong> (imię, telefon, terminy wizyt) należą do salonu. Salon decyduje, co tam wpisuje, a my przetwarzamy je wyłącznie w jego imieniu, jako podmiot przetwarzający. Zasady tego powierzenia opisuje umowa zawierana z salonem.</li>
+    <li>Dane właściciela salonu (osoby, która zakłada konto) przetwarzamy jako administrator, żeby aplikacja działała i żeby móc się z nim kontaktować.</li>
+    <li>Dane klientów salonu (imię, telefon, terminy wizyt) należą do salonu. Salon decyduje, co tam wpisuje, a my przetwarzamy je wyłącznie w jego imieniu, jako podmiot przetwarzający. Zasady tego powierzenia opisuje umowa zawierana z salonem.</li>
   </ul>
 
   <h3>Jakie dane przetwarzamy</h3>
-  <table>
-    <tr><th>Dane</th><th>Po co</th><th>Podstawa</th></tr>
-    <tr><td>Adres e-mail i nazwa konta Google właściciela salonu</td><td>Logowanie do aplikacji i przypisanie kalendarza do właściwego salonu</td><td>Wykonanie umowy (art. 6 ust. 1 lit. b RODO)</td></tr>
-    <tr><td>Dane salonu: nazwa, branża, godziny pracy, ustawienia</td><td>Działanie kalendarza</td><td>Wykonanie umowy</td></tr>
-    <tr><td>Dane klientów salonu: nazwa (imię lub opis) i numer telefonu</td><td>Prowadzenie kalendarza wizyt i wysyłka przypomnień SMS</td><td>Powierzenie przez salon (art. 28 RODO)</td></tr>
-    <tr><td>Wizyty: data, godzina, czas trwania, opis, status</td><td>Kalendarz i przypomnienia</td><td>Powierzenie przez salon</td></tr>
-  </table>
-  <p>Aplikacja <strong>nie zbiera</strong> lokalizacji, kontaktów z telefonu, zdjęć ani danych o zdrowiu. Pole opisu wizyty jest zwykłą notatką i nie służy do prowadzenia dokumentacji medycznej.</p>
+  <div class="table">
+    <table>
+      <thead><tr><th>Dane</th><th>Po co</th><th>Podstawa</th></tr></thead>
+      <tbody>
+        <tr><td>Adres e-mail i nazwa konta Google właściciela salonu</td><td>Logowanie do aplikacji i przypisanie kalendarza do właściwego salonu</td><td>Wykonanie umowy (art. 6 ust. 1 lit. b RODO)</td></tr>
+        <tr><td>Dane salonu: nazwa, branża, godziny pracy, ustawienia</td><td>Działanie kalendarza</td><td>Wykonanie umowy</td></tr>
+        <tr><td>Dane klientów salonu: nazwa (imię lub opis) i numer telefonu</td><td>Prowadzenie kalendarza wizyt i wysyłka przypomnień SMS</td><td>Powierzenie przez salon (art. 28 RODO)</td></tr>
+        <tr><td>Wizyty: data, godzina, czas trwania, opis, status</td><td>Kalendarz i przypomnienia</td><td>Powierzenie przez salon</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p>Aplikacja nie zbiera lokalizacji, kontaktów z telefonu, zdjęć ani danych o zdrowiu. Pole opisu wizyty jest zwykłą notatką i nie służy do prowadzenia dokumentacji medycznej.</p>
 
   <h3>Gdzie dane są przechowywane</h3>
-  <p>Dane trzymamy w usłudze <strong>Google Cloud Firestore</strong>, w regionie <strong>europe-central2 (Warszawa)</strong>. Logowanie obsługuje Firebase Authentication. Dostawcą obu usług jest Google, który działa jako nasz podprzetwarzający. Dane są szyfrowane w przesyle i w spoczynku.</p>
-  <p>Kopia danych kalendarza znajduje się także w pamięci urządzenia, na którym zainstalowano aplikację — dzięki temu działa ona bez internetu. Wylogowanie usuwa tę kopię.</p>
+  <p>Dane trzymamy w usłudze Google Cloud Firestore, w regionie europe-central2 (Warszawa). Logowanie obsługuje Firebase Authentication. Dostawcą obu usług jest Google, który działa jako nasz podprzetwarzający. Dane są szyfrowane w przesyle i w spoczynku.</p>
+  <p>Kopia danych kalendarza znajduje się także w pamięci urządzenia, na którym zainstalowano aplikację. Dzięki temu działa ona bez internetu. Wylogowanie usuwa tę kopię.</p>
 
   <h3>Przypomnienia SMS</h3>
   <p>Gdy salon włączy przypomnienia, numer telefonu klienta i treść wiadomości trafiają do operatora bramki SMS, który wysyła wiadomość. Treść przypomnienia nie zawiera imienia klienta. Funkcja jest w przygotowaniu i uruchamiamy ją dopiero po podpisaniu umowy z salonem.</p>
@@ -84,21 +117,22 @@
   <h3>Jak długo przechowujemy dane</h3>
   <p>Dane kalendarza przechowujemy tak długo, jak salon korzysta z aplikacji. Po zakończeniu współpracy usuwamy je w ciągu 30 dni, z wyjątkiem kopii zapasowych, które wygasają zgodnie z ich retencją (do 12 miesięcy). Salon może w każdej chwili usunąć pojedynczego klienta wraz z jego danymi.</p>
 
-  <h2>Twoje prawa (dotyczy wszystkich produktów)</h2>
+  <h2>Twoje prawa</h2>
   <p>Masz prawo dostępu do swoich danych, ich sprostowania, usunięcia, ograniczenia przetwarzania, przenoszenia oraz wniesienia sprzeciwu. Przysługuje Ci też skarga do Prezesa Urzędu Ochrony Danych Osobowych.</p>
-  <p><strong>Jesteś klientem salonu?</strong> W sprawie swoich danych zwróć się najpierw do salonu, w którym umówiono wizytę — to on decyduje o tych danych. Możesz też napisać do nas, a my przekażemy sprawę dalej.</p>
+  <p class="note">Jesteś klientem salonu lub gabinetu, który korzysta z naszych rozwiązań? W sprawie swoich danych zwróć się najpierw do tej firmy, bo to ona decyduje o tych danych. Możesz też napisać do nas, a przekażemy sprawę dalej.</p>
 
-  <h2>Statystyki</h2>
-  <p>Nie używamy narzędzi śledzących w tej witrynie. W aplikacji Zeszyt wizyt planujemy anonimową statystykę korzystania (bez imion, numerów telefonu i treści notatek), żeby wiedzieć, które funkcje są używane. Gdy ją uruchomimy, zaktualizujemy tę politykę.</p>
+  <h2>Pliki cookies i statystyki</h2>
+  <p>Ta witryna nie używa narzędzi analitycznych, reklamowych ani śledzących i nie zapisuje plików cookies do takich celów. Czcionki strony są pobierane z Google Fonts, dlatego przeglądarka łączy się z serwerami Google, które otrzymują Twój adres IP. Jeśli dodamy narzędzia statystyczne, poprosimy wcześniej o zgodę i zaktualizujemy tę politykę.</p>
+  <p>W aplikacji Termino planujemy anonimową statystykę korzystania (bez imion, numerów telefonu i treści notatek), żeby wiedzieć, które funkcje są używane. Gdy ją uruchomimy, zaktualizujemy tę politykę.</p>
 
   <h2>Zmiany</h2>
-  <p>Nową wersję polityki publikujemy pod tym adresem wraz z datą. O istotnych zmianach informujemy salony korzystające z aplikacji.</p>
+  <p>Nową wersję polityki publikujemy pod tym adresem wraz z datą. O istotnych zmianach informujemy firmy korzystające z naszych aplikacji.</p>
+  <p>Termino jest w fazie pilotażu. Ta polityka opisuje stan na wrzesień 2026 i będzie uzupełniana wraz z uruchamianiem kolejnych funkcji oraz kolejnych produktów.</p>
+</main>
 
-  <div class="note">
-    <p style="margin:0"><strong>Zeszyt wizyt jest w fazie pilotażu.</strong> Ta polityka opisuje stan na wrzesień 2026 i będzie uzupełniana wraz z uruchamianiem kolejnych funkcji oraz kolejnych produktów.</p>
-  </div>
-
-  <footer><a href="/">Simplo Studio</a> · © 2026</footer>
-</div>
+<footer><div class="wrap">Simplo Studio · © 2026</div></footer>
+<script>
+(function(){var m='kontakt'+'@'+'simplostudio'+'.com';document.querySelectorAll('.js-mail').forEach(function(el){var a=document.createElement('a');a.href='mai'+'lto:'+m;a.textContent=m;el.replaceWith(a);});})();
+</script>
 </body>
 </html>
