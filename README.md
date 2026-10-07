@@ -1,4 +1,5 @@
 # simplostudio.com
 
-Strona wizytówka Simplo Studio z polityką prywatności aplikacji „Zeszyt wizyt".
-Hostowana na GitHub Pages, domena z GoDaddy.
+Strona Simplo Studio: usługi IT i automatyzacje, podstrona aplikacji Termino
+(/termino.html) oraz wspólna polityka prywatności.
+Hostowana na GitHub Pages (gałąź main), domena z GoDaddy.
